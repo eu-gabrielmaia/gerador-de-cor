@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/RGB icon.png" type="image/x-png">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Cor</title>
+</head>
+<body>
+    <div class="gerador">
+        <div class="cor"></div>
+        <div class="div-funcoes">
+            <div class="codigos">
+                <div class="funcoes">
+                    <p class="textos">Vermelho: <span class="cod-cores" id="red">---</span></p>
+                    <input class="botoes" id="btn-red" type="button" value="Sortear" onclick="sorteaRed()">
+                </div>
+                <div class="funcoes">
+                    <p class="textos">Verde: <span class="cod-cores" id="green">---</span></p>
+                    <input class="botoes" id="btn-green" type="button" value="Sortear" onclick="sorteaGreen()">
+                </div>
+                <div class="funcoes">
+                    <p class="textos">Azul: <span class="cod-cores" id="blue">---</span></p>
+                    <input class="botoes" id="btn-blue" type="button" value="Sortear" onclick="sorteaBlue()">
+                </div>
+            </div>
+            <div> 
+                <input class="botoes" type="button" id="btn-todos" value="Sortear Todos" onclick="sorteaTodos()">
+                <input class="botoes" type="button" id="btn-salvar" value="Salvar" onclick="salva()">
+                <input class="botoes" type="button" id="btn-limpar" value="Limpar" onclick="limpa()">
+                <input class="botoes" type="button" id="btn-reiniciar" value="Reiniciar" onclick="reinicia()">
+                <p class="codigos" id="titulo-cod-salvo">RED - GREEEN - BLUE</p>
+                <p class="codigos" id="cod-salvo">---, ---, ---</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
